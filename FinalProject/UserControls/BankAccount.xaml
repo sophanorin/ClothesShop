@@ -1,0 +1,77 @@
+﻿<UserControl
+    x:Class="FinalProject.UserControls.BankAccount"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:FinalProject.UserControls"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:meterialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+    d:DesignHeight="448"
+    d:DesignWidth="463"
+    FontWeight="DemiBold"
+    mc:Ignorable="d">
+    <Grid Background="#9795EF">
+        <Grid x:Name="bankaccPanel" VerticalAlignment="Top" Height="300" IsHitTestVisible="False" >
+            <StackPanel VerticalAlignment="Center" DataContext="{Binding Bank}">
+            <StackPanel Orientation="Horizontal">
+                <StackPanel Margin="10,10" Orientation="Horizontal">
+                    <Label Width="80" Content="First Name" />
+                    <Label Margin="10 0" Content=":" />
+                    <TextBox
+                        x:Name="fname"
+                        Text="{Binding FirstName}"
+                        Width="100"
+                        Padding="3,0"
+                        TextChanged="TextChanged"
+                        />
+                </StackPanel>
+                <StackPanel Margin="10,10" Orientation="Horizontal">
+                    <Label Width="80" Content="Last Name" />
+                    <Label Margin="10 0" Content=":" />
+                    <TextBox
+                        x:Name="lname"
+                        Text="{Binding LastName}"
+                        Width="100"
+                        Padding="3,0"
+                        TextChanged="TextChanged"/>
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Margin="10,10" Orientation="Horizontal">
+                <Label Width="80" Content="BankName" />
+                <Label Margin="10 0" Content=":" />
+                    <TextBox
+                       BorderThickness="1"
+                        Text="{Binding BankName}"
+                        Width="100"
+                        Padding="3,0" 
+                        TextChanged="TextChanged"/>
+                </StackPanel>
+            <StackPanel Margin="10,10" Orientation="Horizontal">
+                <Label Width="80" Content="Account ID" />
+                <Label Margin="10 0" Content=":" />
+                <TextBox
+                    Text="{Binding AccountID}"
+                        Width="150"
+                        Padding="3,0"
+                    BorderThickness="1"
+                    TextChanged="TextChanged"/>
+            </StackPanel>
+            <StackPanel Margin="10,10" Orientation="Horizontal">
+                <Label Width="80" Content="Credit Card"/>
+                <Label Margin="10 0" Content=":" />
+                <TextBox
+                    Text="{Binding CreditCard}"
+                    InputScope="CurrencyAmount"
+                        Width="200"
+                        Padding="3,0"
+                    BorderThickness="1"
+                    TextChanged="TextChanged"/>
+            </StackPanel>
+        </StackPanel>
+        </Grid>
+        <Grid VerticalAlignment="Bottom" Height="300" Margin="0 10">
+            <Button x:Name="savebtn" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="10" Width="100" Content="Save" Click="savebtn_Click" Visibility="Collapsed"/>
+            <Button x:Name="editbtn" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="10" Width="100" Content="Edit" Click="editbtn_Click"/>
+        </Grid>
+    </Grid>
+</UserControl>

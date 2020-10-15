@@ -1,0 +1,266 @@
+﻿<Window
+    x:Class="FinalProject.Windows.subwindows.windows_Iadmin.NewCashier"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:FinalProject.Windows.subwindows.windows_Iadmin"
+    xmlns:materialdesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:sys="clr-namespace:System;assembly=mscorlib"
+    x:Name="this"
+    Title="NewCashier"
+    Width="1000"
+    Height="500"
+    ResizeMode="NoResize"
+    WindowStartupLocation="CenterOwner"
+    mc:Ignorable="d">
+    <Grid>
+        <Border>
+            <Border.Background>
+                <LinearGradientBrush StartPoint="1,0">
+                    <GradientStop Color="#7F7F70DB" />
+                    <GradientStop Offset="0.5" Color="#7F5414FF" />
+                    <GradientStop Offset="1" Color="#7FFB89E6" />
+                </LinearGradientBrush>
+            </Border.Background>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="4.5*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Grid Grid.Column="0">
+                        <StackPanel>
+                            <StackPanel Margin="10" Orientation="Horizontal">
+                                <Label Width="100" Content="IDCard" />
+                                <Label Width="20" Content=":" />
+                                <TextBox
+                                    Width="150"
+                                    Height="28"
+                                    Padding="3,-1"
+                                    materialdesign:TextFieldAssist.DecorationVisibility="Hidden"
+                                    BorderBrush="Black"
+                                    BorderThickness="1.5"
+                                    FontSize="16"
+                                    Text="{Binding Employee.IDcard, ElementName=this}" />
+                            </StackPanel>
+                            <StackPanel Margin="10" Orientation="Horizontal">
+                                <Label Width="100" Content="FirstName" />
+                                <Label Width="20" Content=":" />
+                                <TextBox
+                                    Width="150"
+                                    Height="28"
+                                    Padding="3,-1"
+                                    materialdesign:TextFieldAssist.DecorationVisibility="Hidden"
+                                    BorderBrush="Black"
+                                    BorderThickness="1.5"
+                                    FontSize="16"
+                                    Text="{Binding Employee.FirstName, ElementName=this}" />
+                            </StackPanel>
+                            <StackPanel
+                                Grid.ColumnSpan="2"
+                                Margin="10"
+                                Orientation="Horizontal">
+                                <Label Width="100" Content="LastName" />
+                                <Label Width="20" Content=":" />
+                                <TextBox
+                                    Width="150"
+                                    Height="28"
+                                    Padding="3,-1"
+                                    materialdesign:TextFieldAssist.DecorationVisibility="Hidden"
+                                    BorderBrush="Black"
+                                    BorderThickness="1.5"
+                                    FontSize="16"
+                                    Text="{Binding Employee.LastName, ElementName=this}" />
+                            </StackPanel>
+                            <StackPanel Margin="10" Orientation="Horizontal">
+                                <Label Width="100" Content="Sex" />
+                                <Label Width="20" Content=":" />
+                                <TextBox
+                                    Width="150"
+                                    Height="28"
+                                    Padding="3,-1"
+                                    materialdesign:TextFieldAssist.DecorationVisibility="Hidden"
+                                    BorderBrush="Black"
+                                    BorderThickness="1.5"
+                                    FontSize="16"
+                                    Text="{Binding Employee.Sex, ElementName=this}" />
+                            </StackPanel>
+                            <StackPanel Margin="10" Orientation="Horizontal">
+                                <Label Width="100" Content="DateOfBirth" />
+                                <Label Width="20" Content=":" />
+                                <DatePicker
+                                    Width="150"
+                                    materialdesign:TextFieldAssist.DecorationVisibility="Hidden"
+                                    materialdesign:TextFieldAssist.TextBoxViewMargin="10 0"
+                                    FontSize="15"
+                                    SelectedDate="{Binding Employee.DateOfBirth, ElementName=this, StringFormat={}{0:dd-mmmm-yyyy}}"
+                                    DisplayDate="2020-10-07" 
+                                    />
+                            </StackPanel>
+                            <StackPanel Margin="10" Orientation="Horizontal">
+                                <Label Width="100" Content="Phone" />
+                                <Label Width="20" Content=":" />
+                                <TextBox
+                                    Width="150"
+                                    Height="28"
+                                    Padding="3,-1"
+                                    materialdesign:TextFieldAssist.DecorationVisibility="Hidden"
+                                    BorderBrush="Black"
+                                    BorderThickness="1.5"
+                                    FontSize="16"
+                                    Text="{Binding Employee.Phone, ElementName=this}" />
+                            </StackPanel>
+                            <StackPanel Margin="10" Orientation="Horizontal">
+                                <Label Width="100" Content="Email" />
+                                <Label Width="20" Content=":" />
+                                <TextBox
+                                    Width="150"
+                                    Height="28"
+                                    Padding="3,-1"
+                                    materialdesign:TextFieldAssist.DecorationVisibility="Hidden"
+                                    BorderBrush="Black"
+                                    BorderThickness="1.5"
+                                    FontSize="16"
+                                    Text="{Binding Employee.Email, ElementName=this}" />
+
+                            </StackPanel>
+
+                            <StackPanel Margin="10" Orientation="Horizontal">
+                                <Label Width="100" Content="Address" />
+                                <Label Width="20" Content=":" />
+                                <TextBox
+                                    Width="150"
+                                    Height="28"
+                                    Padding="3,-1"
+                                    materialdesign:TextFieldAssist.DecorationVisibility="Hidden"
+                                    BorderBrush="Black"
+                                    BorderThickness="1.5"
+                                    FontSize="16"
+                                    Text="{Binding Employee.Address, ElementName=this}" />
+                            </StackPanel>
+                        </StackPanel>
+                    </Grid>
+                    <Grid Grid.Column="1">
+                        <StackPanel>
+                            <StackPanel Margin="10" Orientation="Horizontal">
+                                <Label Width="100" Content="Position" />
+                                <Label Width="20" Content=":" />
+                                <ComboBox
+                                    Width="150"
+                                    Height="28"
+                                    Padding="8,0"
+                                    VerticalContentAlignment="Center"
+                                    materialdesign:TextFieldAssist.DecorationVisibility="Hidden"
+                                    BorderBrush="Black"
+                                    BorderThickness="1.5"
+                                    FontSize="16"
+                                    IsEditable="False"
+                                    Text="{Binding Employee.Position, ElementName=this}"
+                                    SelectionChanged="ComboBox_SelectionChanged"
+                                    >
+
+                                    <ComboBoxItem Content="Cashier" />
+                                    <ComboBoxItem Content="Waiter" />
+                                    <ComboBoxItem Content="Security" />
+                                </ComboBox>
+                            </StackPanel>
+                            <StackPanel Margin="10" Orientation="Horizontal">
+                                <Label Width="100" Content="Zone" />
+                                <Label Width="20" Content=":" />
+                                <ComboBox
+                                    Width="150"
+                                    Height="28"
+                                    Padding="5,0"
+                                    VerticalContentAlignment="Center"
+                                    materialdesign:TextFieldAssist.DecorationVisibility="Hidden"
+                                    BorderBrush="Black"
+                                    BorderThickness="1.5"
+                                    FontSize="16"
+                                    IsEditable="False"
+                                    Text="{Binding Employee.Zone, ElementName=this}">
+
+                                    <ComboBoxItem Content="A" />
+                                    <ComboBoxItem Content="B" />
+                                    <ComboBoxItem Content="C" />
+                                </ComboBox>
+                            </StackPanel>
+                            <StackPanel IsEnabled="{Binding IsEnable}">
+                                <StackPanel
+                                    Grid.ColumnSpan="2"
+                                    Margin="10"
+                                    Orientation="Horizontal">
+                                    <Label Width="100" Content="Username" />
+                                    <Label Width="20" Content=":" />
+                                    <TextBox
+                                        Width="150"
+                                        Height="28"
+                                        Padding="3,-1"
+                                        materialdesign:TextFieldAssist.DecorationVisibility="Hidden"
+                                        BorderBrush="Black"
+                                        BorderThickness="1.5"
+                                        FontSize="16"
+                                        Text="{Binding Login.Username, ElementName=this}" />
+                                </StackPanel>
+                                <StackPanel
+                                    Grid.ColumnSpan="2"
+                                    Margin="10"
+                                    Orientation="Horizontal">
+                                    <Label Width="100" Content="Password" />
+                                    <Label Width="20" Content=":" />
+                                    <TextBox
+                                        Width="150"
+                                        Height="28"
+                                        Padding="3,-1"
+                                        materialdesign:TextFieldAssist.DecorationVisibility="Hidden"
+                                        BorderBrush="Black"
+                                        BorderThickness="1.5"
+                                        FontSize="16"
+                                        Text="{Binding Login.Password, ElementName=this}" />
+                                </StackPanel>
+                            </StackPanel>
+                        </StackPanel>
+                    </Grid>
+                    <Grid Grid.Column="2">
+                        <Border
+                            x:Name="pictureProduct"
+                            Width="200"
+                            Height="250"
+                            Margin="0,30"
+                            VerticalAlignment="Top"
+                            Cursor="Hand"
+                            MouseDown="Border_MouseDown"
+                            >
+                            <Border.Background>
+                                <ImageBrush  ImageSource="/images/Icons/addphoto.png" Stretch="Fill"/>
+                            </Border.Background>
+                        </Border>
+                    </Grid>
+                </Grid>
+                <Grid Grid.Row="1">
+                    <StackPanel HorizontalAlignment="Right" Orientation="Horizontal">
+                        <Button
+                            Click="Button_Click"
+                            Width="100"
+                            Margin="10"
+                            HorizontalAlignment="Right"
+                            VerticalAlignment="Bottom"
+                            Content="Submit" />
+                        <Button
+                            Width="100"
+                            Margin="10"
+                            HorizontalAlignment="Right"
+                            VerticalAlignment="Bottom"
+                            Content="Cancel" />
+                    </StackPanel>
+                </Grid>
+            </Grid>
+
+        </Border>
+    </Grid>
+</Window>

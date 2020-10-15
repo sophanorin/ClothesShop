@@ -1,0 +1,91 @@
+﻿<Window
+    x:Class="FinalProject.Windows.subwindows.windows_Icashier.stock"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:FinalProject.Windows.subwindows"
+    xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="Stock"
+    Width="500"
+    Height="600"
+    Icon="/images/icons/icons8_clouds_64px.png"
+    x:Name="this"
+    mc:Ignorable="d">
+    <Grid>
+        <StackPanel Margin="5,0">
+            <StackPanel>
+                <Grid
+                    Height="150"
+                    VerticalAlignment="Top"
+                    Background="#05dfd7">
+                    <StackPanel
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        Orientation="Vertical">
+                        <StackPanel
+                            Margin="5"
+                            HorizontalAlignment="Center"
+                            Orientation="Horizontal">
+                            <TextBox
+                                Text="{Binding Search}"
+                                Width="300"
+                                Height="35"
+                                Padding="4,0"
+                                Background="White"
+                                BorderThickness="1"
+                                FontSize="18"
+                                TextAlignment="Right" 
+                                KeyDown="TextBox_KeyDown"
+                                />
+                            <Button
+                                Width="100"
+                                Height="35"
+                                Content="Search" 
+                                Click="Button_Click"
+                                />
+                        </StackPanel>
+                    </StackPanel>
+                </Grid>
+            </StackPanel>
+
+            <DataGrid
+                x:Name="stockProducts"
+                Height="500"
+                AutoGenerateColumns="False"
+                CanUserDeleteRows="False"
+                CanUserResizeColumns="False"
+                GridLinesVisibility="All"
+                HorizontalGridLinesBrush="Black"
+                IsReadOnly="True"
+                VerticalGridLinesBrush="Black"
+                VerticalScrollBarVisibility="Disabled"
+                ItemsSource="{Binding Products,ElementName=this}"
+                >
+                
+                <DataGrid.Columns>
+                    <DataGridTextColumn
+                        x:Name="colDescription"
+                        Width="3*"
+                        Binding="{Binding Description}"
+                        Header="Description" />
+                    <DataGridTextColumn
+                        x:Name="colPrice"
+                        Width="*"
+                        Binding="{Binding Price, StringFormat={}{0:c}}"
+                        Header="Price" />
+                    <DataGridTextColumn
+                        x:Name="colSize"
+                        Width="*"
+                        Binding="{Binding Size}"
+                        Header="Size" />
+                    <DataGridTextColumn
+                        x:Name="colAmount"
+                        Width="*"
+                        Binding="{Binding Amount}"
+                        Header="Amount" />
+                </DataGrid.Columns>
+            </DataGrid>
+        </StackPanel>
+    </Grid>
+</Window>

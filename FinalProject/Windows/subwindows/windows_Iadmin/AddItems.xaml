@@ -1,0 +1,224 @@
+﻿<Window
+    x:Class="FinalProject.Windows.subwindows.windows_Iadmin.AddItems"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:FinalProject.Windows.subwindows.windows_Iadmin"
+    xmlns:materialdesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="AddItems"
+    Width="1000"
+    Height="500"
+    FontSize="16"
+    FontWeight="DemiBold"
+    ResizeMode="NoResize"
+    WindowStartupLocation="CenterOwner"
+    x:Name="this"
+    mc:Ignorable="d">
+    <Grid>
+        <Border>
+            <Border.Background>
+                <LinearGradientBrush StartPoint="1,0">
+                    <GradientStop Color="#7F7F70DB" />
+                    <GradientStop Offset="0.5" Color="#7F5414FF" />
+                    <GradientStop Offset="1" Color="#7FFB89E6" />
+                </LinearGradientBrush>
+            </Border.Background>
+            <StackPanel>
+
+                <Border Height="472">
+                    <Grid Margin="0,20">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="300*" />
+                            <RowDefinition Height="30*" />
+                        </Grid.RowDefinitions>
+                        <StackPanel
+                            Grid.Row="0"
+                            Grid.Column="0"
+                            Grid.ColumnSpan="2">
+                            <StackPanel Margin="10" Orientation="Horizontal">
+                                <Label Width="100" Content="Description" />
+                                <Label Width="20" Content=":" />
+                                <TextBox
+                                    Text="{Binding Product.Description,ElementName=this,UpdateSourceTrigger=PropertyChanged}"
+                                    Width="150"
+                                    Height="28"
+                                    Padding="3,-1"
+                                    materialdesign:TextFieldAssist.DecorationVisibility="Hidden"
+                                    BorderBrush="Black"
+                                    BorderThickness="1.5"
+                                    FontSize="16" />
+                            </StackPanel>
+                            <StackPanel
+                                Grid.ColumnSpan="2"
+                                Margin="10"
+                                Orientation="Horizontal">
+                                <Label Width="100" Content="Price" />
+                                <Label Width="20" Content=":" />
+                                <TextBox
+                                    Text="{Binding Product.Price,ElementName=this,UpdateSourceTrigger=PropertyChanged}"
+                                    Width="150"
+                                    Height="28"
+                                    Padding="3,-1"
+                                    materialdesign:TextFieldAssist.DecorationVisibility="Hidden"
+                                    BorderBrush="Black"
+                                    BorderThickness="1.5"
+                                    FontSize="16" />
+                            </StackPanel>
+                            <StackPanel Margin="10" Orientation="Horizontal">
+                                <Label Width="100" Content="Size" />
+                                <Label Width="20" Content=":" />
+                                <ComboBox
+                                    Text="{Binding Product.Size,ElementName=this,UpdateSourceTrigger=PropertyChanged}"
+                                    Width="150"
+                                    Height="28"
+                                    Padding="3,0"
+                                    VerticalContentAlignment="Center"
+                                    materialdesign:TextFieldAssist.DecorationVisibility="Hidden"
+                                    Background="Transparent"
+                                    BorderBrush="Black"
+                                    BorderThickness="1.5"
+                                    FontSize="16"
+                                    IsEditable="True">
+                                    <ComboBoxItem Content="M,L,X" />
+                                    <ComboBoxItem Content="L,XXl" />
+                                    <ComboBoxItem Content="X,X2" />
+                                    <ComboBoxItem Content="XXL" />
+                                </ComboBox>
+                            </StackPanel>
+                            <StackPanel Margin="10" Orientation="Horizontal">
+                                <Label Width="100" Content="Type" />
+                                <Label Width="20" Content=":" />
+                                <ComboBox
+                                    Text="{Binding Product.Type,ElementName=this,UpdateSourceTrigger=PropertyChanged}"
+                                    Width="150"
+                                    Height="28"
+                                    Padding="3,0"
+                                    VerticalContentAlignment="Center"
+                                    materialdesign:TextFieldAssist.DecorationVisibility="Hidden"
+                                    Background="Transparent"
+                                    BorderBrush="Black"
+                                    BorderThickness="1.5"
+                                    FontSize="16"
+                                    IsEditable="True">
+
+                                    <ComboBoxItem Content="Shirt" />
+                                    <ComboBoxItem Content="Shoes" />
+                                    <ComboBoxItem Content="Underwear" />
+                                    <ComboBoxItem Content="Hoodies" />
+                                </ComboBox>
+                            </StackPanel>
+                            <StackPanel Margin="10" Orientation="Horizontal">
+                                <Label Width="100" Content="Amount" />
+                                <Label Width="20" Content=":" />
+                                <TextBox
+                                    Text="{Binding Product.Amount,ElementName=this,UpdateSourceTrigger=PropertyChanged}"
+                                    Width="150"
+                                    Height="28"
+                                    Padding="3,-1"
+                                    materialdesign:TextFieldAssist.DecorationVisibility="Hidden"
+                                    BorderBrush="Black"
+                                    BorderThickness="1.5"
+                                    FontSize="16" />
+                            </StackPanel>
+                        </StackPanel>
+                        <StackPanel Grid.Row="0" Grid.Column="1">
+                            <GroupBox Height="260">
+                                <GroupBox.Header>
+                                    <Grid Height="25">
+                                        <TextBlock Margin="10,0" Text="Category" />
+                                        <Button
+                                            Width="50"
+                                            Margin="0,0,-5,0"
+                                            HorizontalAlignment="Right"
+                                            Background="{x:Null}"
+                                            BorderThickness="0"
+                                            Click="NewCategory_Click">
+                                            <materialdesign:PackIcon
+                                                Width="20"
+                                                Height="20"
+                                                Margin="0,0,0,5"
+                                                Kind="Add" />
+                                        </Button>
+                                    </Grid>
+                                </GroupBox.Header>
+                                <WrapPanel
+                                    Orientation="Vertical"
+                                    ScrollViewer.CanContentScroll="True"
+                                    ScrollViewer.VerticalScrollBarVisibility="Hidden">
+                                    <ItemsControl ItemsSource="{Binding Categories,ElementName=this}">
+                                        <ItemsControl.ItemTemplate>
+                                            <DataTemplate>
+                                                <RadioButton
+                                                    Checked="RadioButton_Checked"
+                                                    Margin="0,0,20,0"
+                                                    Content="{Binding Name}"
+                                                    GroupName="Category" />
+                                            </DataTemplate>
+                                        </ItemsControl.ItemTemplate>
+                                    </ItemsControl>
+                                </WrapPanel>
+                            </GroupBox>
+                        </StackPanel>
+                        <Border
+                            x:Name="pictureProduct"
+                            Grid.Column="2"
+                            Height="260"
+                            Margin="55,0,56,0"
+                            VerticalAlignment="Top"
+                            BorderBrush="#673AB7"
+                            BorderThickness="2"
+                            Cursor="Hand"
+                            MouseDown="ChooseImage_MouseDown">
+                            <Border.Background>
+                                <ImageBrush ImageSource="/images/Icons/addphoto.png" Stretch="Fill" />
+                            </Border.Background>
+                        </Border>
+
+                        <Grid Grid.Row="1" Grid.ColumnSpan="3">
+                            <StackPanel HorizontalAlignment="Right" Orientation="Horizontal">
+                                <Button
+                                    Width="100"
+                                    Margin="10,-5"
+                                    HorizontalAlignment="Right"
+                                    VerticalAlignment="Bottom"
+                                    Content="Refresh"
+                                    Click="Refresh_Click"
+                                    />
+                                <Button
+                                    Width="100"
+                                    Margin="10,-5"
+                                    HorizontalAlignment="Right"
+                                    VerticalAlignment="Bottom"
+                                    Content="Add"
+                                    Click="Add_Click"
+                                    />
+                                <Button
+                                    Width="100"
+                                    Margin="10,-5"
+                                    HorizontalAlignment="Right"
+                                    VerticalAlignment="Bottom"
+                                    Content="Clear"
+                                    Click="Clear_Click"
+                                    />
+                                <Button
+                                    Width="100"
+                                    Margin="10,-5"
+                                    HorizontalAlignment="Right"
+                                    VerticalAlignment="Bottom"
+                                    Content="Cancel" 
+                                    Click="Cancel_Click"
+                                    />
+                            </StackPanel>
+                        </Grid>
+                    </Grid>
+                </Border>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>

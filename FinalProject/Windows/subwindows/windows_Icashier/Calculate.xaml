@@ -1,0 +1,45 @@
+﻿<Window
+    x:Class="FinalProject.Windows.subwindows.windows_Icashier.Calculate"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:FinalProject.Windows.subwindows.windows_Icashier"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:SystemGlobalization="clr-namespace:System.Globalization;assembly=mscorlib"
+    Title="Calculate"
+    Width="380"
+    Height="320"
+    Background="#12cad6"
+    FontSize="18"
+    ResizeMode="NoResize"
+    FontWeight="DemiBold"
+    WindowStartupLocation="CenterOwner"
+    mc:Ignorable="d"
+    >
+    <StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="10">
+            <Label Content="Total : " Width="100"/>
+            <TextBox x:Name="Total" Width="200" BorderThickness="1.2" BorderBrush="Black" IsHitTestVisible="False" Text="{Binding Total,ConverterCulture={x:Static SystemGlobalization:CultureInfo.DefaultThreadCurrentCulture},StringFormat={}{0:C}}" TextAlignment="Right" Padding="5 0" Background="White"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="10">
+            <Label Content="Recieve : " Width="100"/>
+            <TextBox x:Name="tbRecieve" Width="200" BorderThickness="1.2" BorderBrush="Black" Padding="5 0" Background="White" TextAlignment="Right" Text="{Binding Recieve,UpdateSourceTrigger=PropertyChanged}"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="10">
+            <Label Content="Refund : " Width="100"/>
+            <TextBox Width="200" BorderThickness="1.2" BorderBrush="Black" Padding="5 0" Background="White" TextAlignment="Right" Text="{Binding Refund,StringFormat={}{0:C},UpdateSourceTrigger=PropertyChanged}" IsHitTestVisible="False"/>
+        </StackPanel>
+        <Grid Height="125">
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Margin="10">
+                <RadioButton Content="USD" Margin="10 0" GroupName="currency" IsChecked="True" Tag="en-Us" Click="CurrencyFormat_Click"/>
+                <RadioButton Content="Rial" Margin="10 0" GroupName="currency" Tag="km-KH" Click="CurrencyFormat_Click"/>
+                <RadioButton Content="Renminbi" Margin="10 0" GroupName="currency" Tag="zh-CN" Click="CurrencyFormat_Click"/>
+                <RadioButton Content="Baht" Margin="10 0" GroupName="currency" Tag="th-TH" Click="CurrencyFormat_Click"/>
+            </StackPanel>
+            <StackPanel VerticalAlignment="Bottom" Orientation="Horizontal" HorizontalAlignment="Right" Margin="10">
+                <Button Content="Calculate" Margin="10 0" Width="100" Click="Calculate_Click"/>
+                <Button Content="OK" Width="100" Click="Button_Click"/>
+            </StackPanel>
+        </Grid>
+    </StackPanel>
+</Window>

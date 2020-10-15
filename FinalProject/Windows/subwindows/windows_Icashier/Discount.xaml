@@ -1,0 +1,18 @@
+﻿<Window x:Class="FinalProject.Windows.subwindows.windows_Icashier.Discount"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FinalProject.Windows.subwindows.windows_Icashier"
+        mc:Ignorable="d"
+        Title="Discount"
+        SizeToContent="WidthAndHeight"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterOwner"
+        FontSize="16"
+        >
+    <StackPanel Margin="10" Orientation="Horizontal">
+        <TextBox Width="200" BorderThickness="1" Text="{Binding Text,UpdateSourceTrigger=Explicit}" x:Name="tbDiscount" Padding="2 0"/>
+        <Button Content="Enter" Margin="5 0 0 0" Click="Enter_Click"/>
+    </StackPanel>
+</Window>

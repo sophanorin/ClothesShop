@@ -1,0 +1,54 @@
+﻿<Window
+    x:Class="FinalProject.Windows.subwindows.windows_Iadmin.ViewEmployees"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:FinalProject.Windows.subwindows.windows_Iadmin"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    x:Name="this"
+    Title="ViewEmployees"
+    Width="1000"
+    Height="500"
+    FontSize="15"
+    ResizeMode="NoResize"
+    WindowStartupLocation="CenterOwner"
+    mc:Ignorable="d">
+    <Grid>
+        <Border>
+            <Border.Background>
+                <LinearGradientBrush StartPoint="1,0">
+                    <GradientStop Color="#7F7F70DB" />
+                    <GradientStop Offset="0.5" Color="#7F5414FF" />
+                    <GradientStop Offset="1" Color="#7FFB89E6" />
+                </LinearGradientBrush>
+            </Border.Background>
+
+            <DataGrid
+                    Grid.Column="0"
+                    Foreground="Black"
+                    ItemsSource="{Binding Employees, ElementName=this}"
+                    ScrollViewer.VerticalScrollBarVisibility="Auto"
+                    AutoGenerateColumns="False"
+                    SelectedItem="{Binding SelectedItem,ElementName=this}"    
+                >
+                <DataGrid.ContextMenu>
+                    <ContextMenu>
+                        <MenuItem Header="Remove" Click="MenuItem_Click" />
+                    </ContextMenu>
+                </DataGrid.ContextMenu>
+                <DataGrid.Columns>
+                    <DataGridTextColumn Binding="{Binding EmployeeID}" Foreground="Black" Header="Sex"/>
+                    <DataGridTextColumn Binding="{Binding FirstName}" Foreground="Black" Header="FistName"/>
+                    <DataGridTextColumn Binding="{Binding LastName}" Foreground="Black" Header="LastName"/>
+                    <DataGridTextColumn Binding="{Binding Sex}" Foreground="Black" Header="Sex"/>
+                    <DataGridTextColumn Binding="{Binding DateOfBirth,StringFormat={}{0:dd-mmmm-yyyy}}" Foreground="Black" Header="DateOfBirth"/>
+                    <DataGridTextColumn Binding="{Binding Phone}" Foreground="Black" Header="Phone"/>
+                    <DataGridTextColumn Binding="{Binding Email}" Foreground="Black" Header="Email"/>
+                    <DataGridTextColumn Binding="{Binding Address}" Foreground="Black" Header="Address"/>
+                    <DataGridTextColumn Binding="{Binding Zone}" Foreground="Black" Header="Zone"/>
+                    <DataGridTextColumn Binding="{Binding Position}" Foreground="Black" Header="Position"/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </Border>
+    </Grid>
+</Window>

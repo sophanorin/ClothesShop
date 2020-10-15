@@ -1,0 +1,85 @@
+D:\WinForm\ClothesShop\FinalProject\bin\Debug\FinalProject.exe.config
+D:\WinForm\ClothesShop\FinalProject\bin\Debug\FinalProject.exe
+D:\WinForm\ClothesShop\FinalProject\bin\Debug\FinalProject.pdb
+D:\WinForm\ClothesShop\FinalProject\obj\Debug\FinalProject.csprojAssemblyReference.cache
+D:\WinForm\ClothesShop\FinalProject\obj\Debug\MainWindow.g.cs
+D:\WinForm\ClothesShop\FinalProject\obj\Debug\App.g.cs
+D:\WinForm\ClothesShop\FinalProject\obj\Debug\FinalProject_MarkupCompile.cache
+D:\WinForm\ClothesShop\FinalProject\obj\Debug\FinalProject_MarkupCompile.lref
+D:\WinForm\ClothesShop\FinalProject\obj\Debug\MainWindow.baml
+D:\WinForm\ClothesShop\FinalProject\obj\Debug\FinalProject.g.resources
+D:\WinForm\ClothesShop\FinalProject\obj\Debug\FinalProject.Properties.Resources.resources
+D:\WinForm\ClothesShop\FinalProject\obj\Debug\FinalProject.csproj.GenerateResource.cache
+D:\WinForm\ClothesShop\FinalProject\obj\Debug\FinalProject.csproj.CoreCompileInputs.cache
+D:\WinForm\ClothesShop\FinalProject\obj\Debug\FinalProject.exe
+D:\WinForm\ClothesShop\FinalProject\obj\Debug\FinalProject.pdb
+D:\WinForm\ClothesShop\FinalProject\obj\Debug\App.baml
+D:\IT Academy Step Cambodia\WPF\ClothesShop\FinalProject\bin\Debug\FinalProject.exe.config
+D:\IT Academy Step Cambodia\WPF\ClothesShop\FinalProject\bin\Debug\FinalProject.exe
+D:\IT Academy Step Cambodia\WPF\ClothesShop\FinalProject\bin\Debug\FinalProject.pdb
+D:\IT Academy Step Cambodia\WPF\ClothesShop\FinalProject\bin\Debug\MaterialDesignColors.dll
+D:\IT Academy Step Cambodia\WPF\ClothesShop\FinalProject\bin\Debug\MaterialDesignThemes.Wpf.dll
+D:\IT Academy Step Cambodia\WPF\ClothesShop\FinalProject\bin\Debug\MaterialDesignColors.pdb
+D:\IT Academy Step Cambodia\WPF\ClothesShop\FinalProject\bin\Debug\MaterialDesignThemes.Wpf.pdb
+D:\IT Academy Step Cambodia\WPF\ClothesShop\FinalProject\bin\Debug\MaterialDesignThemes.Wpf.xml
+D:\IT Academy Step Cambodia\WPF\ClothesShop\FinalProject\obj\Debug\FinalProject.csprojAssemblyReference.cache
+D:\IT Academy Step Cambodia\WPF\ClothesShop\FinalProject\obj\Debug\App.g.cs
+D:\IT Academy Step Cambodia\WPF\ClothesShop\FinalProject\obj\Debug\FinalProject_MarkupCompile.cache
+D:\IT Academy Step Cambodia\WPF\ClothesShop\FinalProject\obj\Debug\FinalProject_MarkupCompile.lref
+D:\IT Academy Step Cambodia\WPF\ClothesShop\FinalProject\obj\Debug\App.baml
+D:\IT Academy Step Cambodia\WPF\ClothesShop\FinalProject\obj\Debug\FinalProject.g.resources
+D:\IT Academy Step Cambodia\WPF\ClothesShop\FinalProject\obj\Debug\FinalProject.Properties.Resources.resources
+D:\IT Academy Step Cambodia\WPF\ClothesShop\FinalProject\obj\Debug\FinalProject.csproj.GenerateResource.cache
+D:\IT Academy Step Cambodia\WPF\ClothesShop\FinalProject\obj\Debug\FinalProject.csproj.CoreCompileInputs.cache
+D:\IT Academy Step Cambodia\WPF\ClothesShop\FinalProject\obj\Debug\FinalProject.csproj.CopyComplete
+D:\IT Academy Step Cambodia\WPF\ClothesShop\FinalProject\obj\Debug\FinalProject.exe
+D:\IT Academy Step Cambodia\WPF\ClothesShop\FinalProject\obj\Debug\FinalProject.pdb
+D:\IT Academy Step Cambodia\WPF\ClothesShop\FinalProject\obj\Debug\ResourceDictionaries\mystyle.baml
+D:\IT Academy Step Cambodia\WPF\ClothesShop\FinalProject\obj\Debug\ResourceDictionaries\checkout.baml
+D:\IT Academy Step Cambodia\WPF\ClothesShop\FinalProject\obj\Debug\Windows\mainwindows\Admin.g.cs
+D:\IT Academy Step Cambodia\WPF\ClothesShop\FinalProject\obj\Debug\Windows\mainwindows\Login.g.cs
+D:\IT Academy Step Cambodia\WPF\ClothesShop\FinalProject\obj\Debug\Windows\mainwindows\Cashier.g.cs
+D:\IT Academy Step Cambodia\WPF\ClothesShop\FinalProject\obj\Debug\Windows\mainwindows\Admin.baml
+D:\IT Academy Step Cambodia\WPF\ClothesShop\FinalProject\obj\Debug\Windows\mainwindows\Login.baml
+D:\IT Academy Step Cambodia\WPF\ClothesShop\FinalProject\obj\Debug\Windows\mainwindows\Cashier.baml
+D:\IT Academy Step Cambodia\WPF\ClothesShop\FinalProject\obj\Debug\Windows\subwindows\windows_Icashier\Invoice.g.cs
+D:\IT Academy Step Cambodia\WPF\ClothesShop\FinalProject\obj\Debug\Windows\subwindows\windows_Icashier\Histories.g.cs
+D:\IT Academy Step Cambodia\WPF\ClothesShop\FinalProject\obj\Debug\Windows\subwindows\windows_Icashier\OrderStatus.g.cs
+D:\IT Academy Step Cambodia\WPF\ClothesShop\FinalProject\obj\Debug\Windows\subwindows\windows_Icashier\stock.g.cs
+D:\IT Academy Step Cambodia\WPF\ClothesShop\FinalProject\obj\Debug\Windows\subwindows\windows_Icashier\Invoice.baml
+D:\IT Academy Step Cambodia\WPF\ClothesShop\FinalProject\obj\Debug\Windows\subwindows\windows_Icashier\Histories.baml
+D:\IT Academy Step Cambodia\WPF\ClothesShop\FinalProject\obj\Debug\Windows\subwindows\windows_Icashier\OrderStatus.baml
+D:\IT Academy Step Cambodia\WPF\ClothesShop\FinalProject\obj\Debug\Windows\subwindows\windows_Icashier\stock.baml
+D:\IT Academy Step Cambodia\WPF\ClothesShop\FinalProject\obj\Debug\Windows\subwindows\windows_Icashier\Setting.g.cs
+D:\IT Academy Step Cambodia\WPF\ClothesShop\FinalProject\obj\Debug\Windows\subwindows\windows_Icashier\Setting.baml
+D:\IT Academy Step Cambodia\WPF\ClothesShop\FinalProject\obj\Debug\UserControls\Password.g.cs
+D:\IT Academy Step Cambodia\WPF\ClothesShop\FinalProject\obj\Debug\UserControls\Password.baml
+D:\IT Academy Step Cambodia\WPF\ClothesShop\FinalProject\obj\Debug\UserControls\Information.g.cs
+D:\IT Academy Step Cambodia\WPF\ClothesShop\FinalProject\obj\Debug\UserControls\Information.baml
+D:\IT Academy Step Cambodia\WPF\ClothesShop\FinalProject\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\IT Academy Step Cambodia\WPF\ClothesShop\FinalProject\obj\Debug\UserControls\BankAccount.g.cs
+D:\IT Academy Step Cambodia\WPF\ClothesShop\FinalProject\obj\Debug\UserControls\BankAccount.baml
+D:\IT Academy Step Cambodia\WPF\ClothesShop\FinalProject\obj\Debug\Windows\subwindows\windows_Icashier\Calculate.g.cs
+D:\IT Academy Step Cambodia\WPF\ClothesShop\FinalProject\obj\Debug\Windows\subwindows\windows_Icashier\Calculate.baml
+D:\IT Academy Step Cambodia\WPF\ClothesShop\FinalProject\obj\Debug\Windows\subwindows\windows_Iadmin\Setting.g.cs
+D:\IT Academy Step Cambodia\WPF\ClothesShop\FinalProject\obj\Debug\Windows\subwindows\windows_Iadmin\Setting.baml
+D:\IT Academy Step Cambodia\WPF\ClothesShop\FinalProject\obj\Debug\Windows\subwindows\windows_Iadmin\NewCashier.g.cs
+D:\IT Academy Step Cambodia\WPF\ClothesShop\FinalProject\obj\Debug\Windows\subwindows\windows_Iadmin\NewCashier.baml
+D:\IT Academy Step Cambodia\WPF\ClothesShop\FinalProject\obj\Debug\Windows\subwindows\windows_Iadmin\SubCost.g.cs
+D:\IT Academy Step Cambodia\WPF\ClothesShop\FinalProject\obj\Debug\Windows\subwindows\windows_Iadmin\SubCost.baml
+D:\IT Academy Step Cambodia\WPF\ClothesShop\FinalProject\obj\Debug\Windows\subwindows\windows_Iadmin\Category.g.cs
+D:\IT Academy Step Cambodia\WPF\ClothesShop\FinalProject\obj\Debug\Windows\subwindows\windows_Iadmin\ViewEmployees.g.cs
+D:\IT Academy Step Cambodia\WPF\ClothesShop\FinalProject\obj\Debug\Windows\subwindows\windows_Iadmin\AddItems.g.cs
+D:\IT Academy Step Cambodia\WPF\ClothesShop\FinalProject\obj\Debug\Windows\subwindows\windows_Iadmin\Category.baml
+D:\IT Academy Step Cambodia\WPF\ClothesShop\FinalProject\obj\Debug\Windows\subwindows\windows_Iadmin\ViewEmployees.baml
+D:\IT Academy Step Cambodia\WPF\ClothesShop\FinalProject\obj\Debug\Windows\subwindows\windows_Iadmin\AddItems.baml
+D:\IT Academy Step Cambodia\WPF\ClothesShop\FinalProject\obj\Debug\Windows\subwindows\windows_Iadmin\ViewAsAdmin.g.cs
+D:\IT Academy Step Cambodia\WPF\ClothesShop\FinalProject\obj\Debug\Windows\subwindows\windows_Iadmin\ViewAsAdmin.baml
+D:\IT Academy Step Cambodia\WPF\ClothesShop\FinalProject\bin\Debug\Dapper.dll
+D:\IT Academy Step Cambodia\WPF\ClothesShop\FinalProject\bin\Debug\Dapper.xml
+D:\IT Academy Step Cambodia\WPF\ClothesShop\FinalProject\obj\Debug\Windows\subwindows\windows_Icashier\Discount.g.cs
+D:\IT Academy Step Cambodia\WPF\ClothesShop\FinalProject\obj\Debug\Windows\subwindows\windows_Icashier\Discount.baml
+D:\IT Academy Step Cambodia\WPF\ClothesShop\FinalProject\bin\Debug\System.ValueTuple.dll
+D:\IT Academy Step Cambodia\WPF\ClothesShop\FinalProject\bin\Debug\System.ValueTuple.xml
+D:\IT Academy Step Cambodia\WPF\ClothesShop\FinalProject\bin\Debug\Dapper.Contrib.dll
+D:\IT Academy Step Cambodia\WPF\ClothesShop\FinalProject\bin\Debug\Dapper.Contrib.xml

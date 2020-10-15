@@ -1,0 +1,54 @@
+﻿<Window
+    x:Class="FinalProject.Windows.subwindows.Histories"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:FinalProject.Windows.subwindows"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="Histories"
+    Width="800"
+    Height="450"
+    x:Name="this"
+    Icon="/images/icons/icons8_edit_chat_history_80px_1.png"
+    mc:Ignorable="d">
+    <Grid Background="#12cad6">
+        <DataGrid
+            ItemsSource="{Binding History}"
+            Width="740"
+            Height="390"
+            Margin="30"
+            GridLinesVisibility="Vertical"
+            CanUserResizeRows="False"
+            AutoGenerateColumns="False"
+            IsReadOnly="True"
+            SelectionMode="Single"
+            VerticalScrollBarVisibility="Hidden"
+            SelectedIndex="{Binding SelectedIndex,ElementName=this}"
+            MouseDoubleClick="DataGrid_MouseDoubleClick"
+            >
+            <DataGrid.Columns>
+                <DataGridTextColumn
+                    Width="0.5*"
+                    Binding="{Binding No}"
+                    Header="No." />
+                <DataGridTextColumn
+                    Width="2*"
+                    Binding="{Binding Description}"
+                    Header="Description" />
+                <DataGridTextColumn
+                    Width="*"
+                    Binding="{Binding Total, StringFormat={}{0:C}}"
+                    Header="Total Price" />
+                <DataGridTextColumn
+                    Width="2*"
+                    Binding="{Binding Address}"
+                    Header="Address" />
+                <DataGridTextColumn
+                    Width="1.5*"
+                    Binding="{Binding DateTime}"
+                    Header="DateTine" />
+            </DataGrid.Columns>
+
+        </DataGrid>
+    </Grid>
+</Window>

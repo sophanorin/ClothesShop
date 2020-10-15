@@ -1,0 +1,187 @@
+﻿<Window
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:FinalProject.Windows.subwindows.windows_Icashier"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:metarialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+    xmlns:UserControls="clr-namespace:FinalProject.UserControls"
+    x:Class="FinalProject.Windows.subwindows.windows_Icashier.Setting"
+    Title="Setting"
+    Icon="/images/icons/settings_96px.png"
+    Width="700"
+    Height="500"
+    FontSize="14"
+    ResizeMode="NoResize"
+    WindowStartupLocation="CenterOwner"
+    x:Name="this"
+    mc:Ignorable="d">
+    <DockPanel>
+        <Border Height="10" DockPanel.Dock="Top" Panel.ZIndex="4">
+            <Border.Effect>
+                <DropShadowEffect Opacity="0.2" Color="Gray" />
+            </Border.Effect>
+            <Border.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="0.5,1">
+                    <GradientStop Offset="0.7" Color="#FFA88BEB" />
+                    <GradientStop Offset="1" Color="#FF5DE6DE" />
+                </LinearGradientBrush>
+            </Border.Background>
+        </Border>
+        <Grid DockPanel.Dock="Left" Panel.ZIndex="5">
+            <Border BorderThickness="0">
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                        <GradientStop Offset="0" Color="#FFA88BEB" />
+                        <GradientStop Offset="1" Color="#FF5DE6DE" />
+                    </LinearGradientBrush>
+                </Border.Background>
+                <Grid Width="200">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="3*" />
+                    </Grid.RowDefinitions>
+                    <metarialDesign:PackIcon
+                        Grid.Row="0"
+                        Width="50"
+                        Height="50"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        Background="{x:Null}"
+                        Foreground="White"
+                        Kind="Settings" />
+                    <StackPanel Grid.Row="1">
+                        <ScrollViewer HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto">
+                            <StackPanel>
+                                <Button
+                                    x:Name="Informationbtn"
+                                    Margin="0,10"
+                                    Background="{x:Null}"
+                                    BorderThickness="0"
+                                    Foreground="White"
+                                    Click="Informationbtn_Click"
+                                    >
+                                    <Grid Width="200" Margin="-20,0">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*" />
+                                            <ColumnDefinition Width="2.3*" />
+                                        </Grid.ColumnDefinitions>
+                                        <metarialDesign:PackIcon
+                                            Grid.Column="0"
+                                            Width="25"
+                                            Height="25"
+                                            Margin="20,0"
+                                            HorizontalAlignment="Left"
+                                            Kind="User" />
+                                        <TextBlock
+                                            Grid.Column="1"
+                                            Margin="10,0"
+                                            VerticalAlignment="Center"
+                                            Text="Information"
+                                            TextAlignment="Left" />
+                                    </Grid>
+                                </Button>
+                                <Button
+                                    x:Name="Passwordbtn"
+                                    Margin="0,10"
+                                    Background="{x:Null}"
+                                    BorderThickness="0"
+                                    Foreground="White"
+                                    Click="PasswordPanl_Click"
+                                    >
+                                    <Grid Width="200" Margin="-20,0">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*" />
+                                            <ColumnDefinition Width="2.3*" />
+                                        </Grid.ColumnDefinitions>
+                                        <metarialDesign:PackIcon
+                                            Grid.Column="0"
+                                            Width="25"
+                                            Height="25"
+                                            Margin="20,0"
+                                            HorizontalAlignment="Left"
+                                            Kind="FormTextboxPassword" />
+                                        <TextBlock
+                                            Grid.Column="1"
+                                            Margin="10,0"
+                                            VerticalAlignment="Center"
+                                            Text="Passwords"
+                                            TextAlignment="Left" />
+                                    </Grid>
+                                </Button>
+                                <Button
+                                    x:Name="Bankaccountbtn"
+                                    Margin="0,10"
+                                    Background="{x:Null}"
+                                    BorderThickness="0"
+                                    Foreground="White"
+                                    Click="Bankaccountbtn_Click"
+                                    >
+                                    <Grid Width="200" Margin="-20,0">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*" />
+                                            <ColumnDefinition Width="2.3*" />
+                                        </Grid.ColumnDefinitions>
+                                        <metarialDesign:PackIcon
+                                            Grid.Column="0"
+                                            Width="25"
+                                            Height="25"
+                                            Margin="20,0"
+                                            HorizontalAlignment="Left"
+                                            Kind="Bank" />
+                                        <TextBlock
+                                            Grid.Column="1"
+                                            Margin="10,0"
+                                            VerticalAlignment="Center"
+                                            Text="BankAccount"
+                                            TextAlignment="Left" />
+                                    </Grid>
+                                </Button>
+                                <Button Margin="0,10"
+                                    Background="{x:Null}"
+                                    BorderThickness="0"
+                                    Foreground="White"
+                                    Click="Refresh_Click"
+                                    >
+                                    <Grid Width="200" Margin="-20,0">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*" />
+                                            <ColumnDefinition Width="2.3*" />
+                                        </Grid.ColumnDefinitions>
+                                        <metarialDesign:PackIcon
+                                            Grid.Column="0"
+                                            Width="25"
+                                            Height="25"
+                                            Margin="20,0"
+                                            HorizontalAlignment="Left"
+                                            Kind="Refresh" />
+                                        <TextBlock
+                                            Grid.Column="1"
+                                            Margin="10,0"
+                                            VerticalAlignment="Center"
+                                            Text="Refresh"
+                                            TextAlignment="Left" />
+                                    </Grid>
+                                </Button>
+                            </StackPanel>
+                        </ScrollViewer>
+                    </StackPanel>
+                </Grid>
+            </Border>
+        </Grid>
+        <StackPanel
+            x:Name="BlockPanel"
+            Grid.Row="0"
+            Grid.RowSpan="2"
+            Grid.Column="0"
+            Grid.ColumnSpan="2"
+            Panel.ZIndex="-1"
+            Background="#9795EF">
+            
+            <UserControls:Information EmployeeInformation="{Binding Employee,ElementName=this}" x:Name="InformationPanel" Height="462" Visibility="Collapsed" Panel.ZIndex="2"/>
+            <UserControls:Password Login="{Binding Password,ElementName=this}" x:Name="PasswordPanel" Height="450" Visibility="Collapsed" Panel.ZIndex="2"/>
+            <UserControls:BankAccount Bank="{Binding BankAccount,ElementName=this}" x:Name="BankAccountPanel" Height="462" Visibility="Collapsed" Panel.ZIndex="2"/>
+            
+        </StackPanel>
+    </DockPanel>
+</Window>

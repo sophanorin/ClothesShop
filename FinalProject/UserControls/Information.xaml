@@ -1,0 +1,109 @@
+﻿<UserControl
+    x:Class="FinalProject.UserControls.Information"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:FinalProject.UserControls"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+    Height="448"
+    d:DesignWidth="463"
+    FontWeight="DemiBold"
+    mc:Ignorable="d">
+    <StackPanel Background="#9795EF">
+        <StackPanel x:Name="InformationUC" IsHitTestVisible="False" Height="340" DataContext="{Binding EmployeeInformation}">
+            <StackPanel Margin="10,10" Orientation="Horizontal">
+                <Label Width="100" Content="FirstName" />
+                <Label Margin="0,0,20,0" Content=":" />
+                <TextBox
+                    x:Name="fname"
+                    Text="{Binding FirstName}"
+                    Width="200"
+                    Padding="5,0"
+                    TextChanged="TextChenged"
+                    />
+            </StackPanel>
+            <StackPanel Margin="10,10" Orientation="Horizontal">
+                <Label Width="100" Content="LastName" />
+                <Label Margin="0,0,20,0" Content=":" />
+                <TextBox
+                    x:Name="lname"
+                    Text="{Binding LastName}"
+                    Width="200"
+                    Padding="5,0"
+                    TextChanged="TextChenged"
+                    />
+            </StackPanel>
+            <StackPanel Margin="10,10" Orientation="Horizontal">
+                <Label Width="100" Content="Sex" />
+                <Label Margin="0,0,20,0" Content=":" />
+                <TextBox
+                    x:Name="sex"
+                    Text="{Binding Sex}"
+                    Width="200"
+                    Padding="5,0"
+                    TextChanged="TextChenged"
+                    />
+            </StackPanel>
+            <StackPanel Margin="10,10" Orientation="Horizontal">
+                <Label Width="100" Content="Date Of Birth" />
+                <Label Margin="0,0,20,0" Content=":" />
+                <DatePicker x:Name="dob" Width="200" materialDesign:TextFieldAssist.TextBoxViewMargin="10 0 0 0" Text="{Binding DateOfBirth}"/>
+            </StackPanel>
+            <StackPanel Margin="10,10" Orientation="Horizontal">
+                <Label Width="100" Content="PhoneNumber" />
+                <Label Margin="0,0,20,0" Content=":" />
+                <TextBox
+                    x:Name="ph"
+                    Width="200"
+                    Padding="5,0"
+                    Text="{Binding Phone}"
+                    TextChanged="TextChenged"
+                    />
+            </StackPanel>
+            <StackPanel Margin="10,10" Orientation="Horizontal">
+                <Label Width="100" Content="Address" />
+                <Label Margin="0,0,20,0" Content=":" />
+                <TextBox
+                    x:Name="addr"
+                    Width="200"
+                    Padding="5,0"
+                    Text="{Binding Address}"
+                    TextChanged="TextChenged"
+                     />
+            </StackPanel>
+            <StackPanel Margin="10,10" Orientation="Horizontal">
+                <Label Width="100" Content="Email" />
+                <Label Margin="0,0,20,0" Content=":" />
+                <TextBox
+                    x:Name="email"
+                    Width="200"
+                    Padding="5,0"
+                    Text="{Binding Email}"
+                    TextChanged="TextChenged"
+                    />
+            </StackPanel>
+        </StackPanel>
+   
+        <Grid Height="120">
+            <Button
+                    x:Name="changebtn"
+                    Width="100"
+                    Margin="10 20"
+                    HorizontalAlignment="Right"
+                    VerticalAlignment="Bottom"
+                    Content="Edit"
+                    Click="changebtn_Click"/>
+            <Button
+                    x:Name="savebtn"
+                    Width="100"
+                    Margin="10 20"
+                    HorizontalAlignment="Right"
+                    VerticalAlignment="Bottom"
+                    Content="Save"
+                    Visibility="Hidden"
+                    Click="savebtn_Click"
+                    />
+        </Grid>
+    </StackPanel>
+</UserControl>
