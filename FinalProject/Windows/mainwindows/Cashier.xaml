@@ -10,11 +10,12 @@
     xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     x:Name="this"
-    Title="MainWindow"
+    Title="Cashier"
     Width="1920"
     Height="1080"
     FontFamily="Bahnschrift"
     FontWeight="Bold"
+    Icon="/images/Icons/R.png"
     WindowState="Maximized"
     WindowStyle="None"
     mc:Ignorable="d">
@@ -439,18 +440,20 @@
                             ItemsSource="{Binding Lists}"
                             ScrollViewer.HorizontalScrollBarVisibility="Disabled"
                             ScrollViewer.VerticalScrollBarVisibility="Hidden"
-                            SelectedIndex="{Binding SelectedIndex, ElementName=this}"
-                            >
+                            SelectedIndex="{Binding SelectedIndex, ElementName=this}">
                             <ListView.ContextMenu>
                                 <ContextMenu>
                                     <MenuItem Header="Edit" />
-                                    <MenuItem Header="Remove" Click="Remove_Click"/>
+                                    <MenuItem Click="Remove_Click" Header="Remove" />
                                     <MenuItem Header="Go to Stock" />
                                 </ContextMenu>
                             </ListView.ContextMenu>
                             <ListView.ItemTemplate>
                                 <DataTemplate>
-                                    <ListViewItem Padding="0" Height="30" Margin="0 7">
+                                    <ListViewItem
+                                        Height="30"
+                                        Margin="0,7"
+                                        Padding="0">
                                         <Grid Width="565">
                                             <Grid.ColumnDefinitions>
                                                 <ColumnDefinition Width="3*" />
@@ -458,24 +461,24 @@
                                                 <ColumnDefinition Width="1.5*" />
                                             </Grid.ColumnDefinitions>
                                             <TextBlock
-                                                VerticalAlignment="Center"
                                                 Grid.Column="0"
+                                                VerticalAlignment="Center"
                                                 FontSize="16"
                                                 FontWeight="ExtraLight"
                                                 Foreground="Gray"
                                                 Text="{Binding Description}"
                                                 TextWrapping="Wrap" />
                                             <TextBlock
-                                                VerticalAlignment="Center"
                                                 Grid.Column="1"
+                                                VerticalAlignment="Center"
                                                 FontSize="16"
                                                 FontWeight="ExtraLight"
                                                 Foreground="Gray"
                                                 Text="{Binding Amount, StringFormat={}x{0}}"
                                                 TextAlignment="Center" />
                                             <TextBlock
-                                                VerticalAlignment="Center"
                                                 Grid.Column="2"
+                                                VerticalAlignment="Center"
                                                 FontSize="16"
                                                 FontWeight="ExtraLight"
                                                 Foreground="Gray"

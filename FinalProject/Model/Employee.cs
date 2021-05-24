@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace FinalProject.Model
 {
-    [Table("Employees")]
+    [Table("Employee")]
     public class Employee
     {
         [Key]

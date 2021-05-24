@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\IT Academy Step Cambodia\WPF\ClothesShop\FinalProject\obj\Debug\
+D:\IT Academy Step Cambodia\WPF\ClothesShop\FinalProject\obj\Release\
 FinalProject
 none
 false
-DEBUG;TRACE
+TRACE
 D:\IT Academy Step Cambodia\WPF\ClothesShop\FinalProject\App.xaml
 22126582810
 
-401294445274
+392136804641
 2247862706
 UserControls\BankAccount.xaml;UserControls\Information.xaml;UserControls\Password.xaml;Windows\mainwindows\Admin.xaml;Windows\mainwindows\Login.xaml;Windows\mainwindows\Cashier.xaml;Windows\subwindows\windows_Iadmin\NewCashier.xaml;Windows\subwindows\windows_Iadmin\Category.xaml;Windows\subwindows\windows_Iadmin\Setting.xaml;Windows\subwindows\windows_Iadmin\SubCost.xaml;Windows\subwindows\windows_Iadmin\ViewAsAdmin.xaml;Windows\subwindows\windows_Iadmin\ViewEmployees.xaml;Windows\subwindows\windows_Icashier\Calculate.xaml;Windows\subwindows\windows_Icashier\Discount.xaml;Windows\subwindows\windows_Icashier\Invoice.xaml;Windows\subwindows\windows_Iadmin\AddItems.xaml;ResourceDictionaries\checkout.xaml;ResourceDictionaries\mystyle.xaml;Windows\subwindows\windows_Icashier\Histories.xaml;Windows\subwindows\windows_Icashier\Setting.xaml;Windows\subwindows\windows_Icashier\OrderStatus.xaml;Windows\subwindows\windows_Icashier\stock.xaml;
 
-False
+True
 

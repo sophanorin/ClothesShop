@@ -9,7 +9,7 @@ using System.Windows;
 
 namespace FinalProject.Model
 {
-    [Table("Products")]
+    [Table("Product")]
     public class Product
     {
         [Key]
