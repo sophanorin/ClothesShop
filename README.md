@@ -2,6 +2,19 @@
 
 Made with :heart: by [Sophanorin](https://web.facebook.com/Heou.sophanorin)
 
+## Description
+ 
+This's desktop application. That's ClothesShop application built with C#, WPF, Dapper. Regarding Database, I have used SQL server but I have designed without Relational by binding table on client side.
+
+## Signin Accounts
+  
+  - As User : 
+      - Username : user1
+      - Password : user1
+  - As Admin :
+      - Username : admin
+      - Password : admin
+
 ## Picture Demo
 
   ![screen_1](/Diagrams/screen_1.JPG)
